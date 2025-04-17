@@ -26,6 +26,7 @@ export async function sendQuestion(
     body: JSON.stringify({
       question,
       conversation_id: conversationId,
+      k: 8,
     }),
   });
 
