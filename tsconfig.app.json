@@ -15,15 +15,13 @@
     "noEmit": true,
     "jsx": "react-jsx",
 
-    /* Compiler options */
-    "compilerOptions": {
       "baseUrl": ".",
       "paths": {
         "@/*": [
           "./src/*"
         ]
-      }
-    },
+      },
+
 
     /* Linting */
     "strict": true,

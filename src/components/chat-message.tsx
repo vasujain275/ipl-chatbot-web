@@ -52,17 +52,17 @@ export function ChatMessage({ message }: MessageProps) {
               h3: ({ node, ...props }) => (
                 <h3 className="text-md font-bold my-1" {...props} />
               ),
-              code: ({ node, inline, className, children, ...props }) => {
-                if (inline) {
-                  return (
-                    <code
-                      className="bg-muted-foreground/20 px-1 py-0.5 rounded text-sm"
-                      {...props}
-                    >
-                      {children}
-                    </code>
-                  );
-                }
+              code: ({ node, className, children, ...props }) => {
+                // if (inline) {
+                //   return (
+                //     <code
+                //       className="bg-muted-foreground/20 px-1 py-0.5 rounded text-sm"
+                //       {...props}
+                //     >
+                //       {children}
+                //     </code>
+                //   );
+                // }
                 return (
                   <pre className="bg-muted-foreground/20 p-2 rounded-md overflow-x-auto my-2 text-sm">
                     <code className={className} {...props}>
