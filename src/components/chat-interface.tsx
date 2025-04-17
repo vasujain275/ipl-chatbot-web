@@ -123,7 +123,9 @@ export function ChatInterface() {
               <div className="h-8 w-8 rounded-full bg-primary/20 flex items-center justify-center">
                 <Loader2 className="h-4 w-4 animate-spin text-primary" />
               </div>
-              <div className="bg-muted p-3 rounded-lg">Thinking...</div>
+              <div className="bg-muted p-3 rounded-lg">
+                <span>Generating markdown response...</span>
+              </div>
             </div>
           )}
           <div ref={messagesEndRef} />
